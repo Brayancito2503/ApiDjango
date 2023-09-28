@@ -1,0 +1,15 @@
+Instalar python tiene para que funcione django tiene que ser minimo la version 3.8 yo tengo la 3.11.4
+Instalar virtualenv -> pip install virtualenv
+pip install -r requirements.txt
+Crear un entorno virtual con el comando: virtualenv (nombre del entrono ej: venv)
+Activarlo con el siguiente comando en cmd en power shell no funciona ese: source .\venv\Scripts\activate
+para salir del entorno virtual ya al terminar de trabajar en el proyecto puedes desactivarlo con deactivate.
+intalar Django -> pip install django
+crear proyecto django -> django-admin startproject nombre_del_proyecto . (en este caso ya no se hace por que ya cree un proyecto)
+ejecutar servidor de desarrollo para verificar que todo esta correcto y corriendo -> python manage.py runserver (si no hay errores ya puedes trabajar)
+(puedes especificar el puerto por su el puerto esta ocupado por otra app).
+ejecutar servidor de desarrollo para ver los cambios realizados -> python manage.py runserver 0.0.0.0
+crear aplicaciones -> python manage.py startapp [nombre de la app (esto es como un modulo)]
+
+
+comando para crear el archivo requirements pip freeze > requirements.txt
