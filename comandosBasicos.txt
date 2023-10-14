@@ -13,3 +13,4 @@ crear aplicaciones -> python manage.py startapp [nombre de la app (esto es como 
 
 
 comando para crear el archivo requirements pip freeze > requirements.txt
+comando para crear un archivo con todos los modelos de una bd ya existente => python manage.py inspectdb > models.py
