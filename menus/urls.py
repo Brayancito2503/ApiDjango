@@ -4,9 +4,9 @@ from .views import MenuView, MenuRolView
 
 routers = routers.DefaultRouter()
 
-routers.register(r'', MenuView, 'menus')
+routers.register(r'menu', MenuView, 'menus')
 
-routers.register(r'', MenuRolView, 'menurol')
+routers.register(r'menurol', MenuRolView, 'menurol')
 
 
 urlpatterns = [

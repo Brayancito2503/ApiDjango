@@ -5,7 +5,7 @@ class PersonalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Personal
         #fields = ('idpersonal', 'idrol', 'nombre', 'apellido', 'telefono','correo','clave','esactivo','fecharegistro')
-        flields = '__all__'
+        fields = '__all__'
 
 class RolSerializer(serializers.ModelSerializer):
     class Meta:

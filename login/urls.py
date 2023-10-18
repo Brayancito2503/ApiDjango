@@ -1,6 +1,7 @@
 
 from django.urls import path, include
 from rest_framework import routers
+from rest_framework.documentation import include_docs_urls
 from .views import RolView, PersonalView
 
 # las funciones path e include de Django para definir rutas URL y para incluir las rutas del enrutador en el archivo de URL principal.
@@ -13,12 +14,13 @@ routers = routers.DefaultRouter()
 
 # registrar un nueva vista
 # Registra la vista RolView en el enrutador con el nombre "roles." 
-routers.register(r'', RolView, 'roles')
+routers.register(r'roles', RolView, 'roles')
 
-# Registra la vista "PersonalView" en el enrutador para "personal."
-routers.register(r'', PersonalView, 'personal')
+# Registra la vista "PerosnalView" en el enrutador para "personal."
+routers.register(r'personal', PersonalView, 'personal')
 
 #versionado de la api
 urlpatterns = [
-    path("", include(routers.urls))
+    path('', include(routers.urls)),
+    path('docs/', include_docs_urls(title = "documentacion de login"))
 ]
