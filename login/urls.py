@@ -13,12 +13,12 @@ routers = routers.DefaultRouter()
 
 # registrar un nueva vista
 # Registra la vista RolView en el enrutador con el nombre "roles." 
-routers.register(r'roles', RolView, 'roles')
+routers.register(r'', RolView, 'roles')
 
 # Registra la vista "PersonalView" en el enrutador para "personal."
-routers.register(r'personal', PersonalView, 'personal')
+routers.register(r'', PersonalView, 'personal')
 
 #versionado de la api
 urlpatterns = [
-    path("api/v1/", include(routers.urls))
+    path("", include(routers.urls))
 ]

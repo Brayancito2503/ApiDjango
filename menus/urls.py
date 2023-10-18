@@ -6,7 +6,7 @@ routers = routers.DefaultRouter()
 
 routers.register(r'', MenuView, 'menus')
 
-routers.register(r'menurol', MenuRolView, 'menurol')
+routers.register(r'', MenuRolView, 'menurol')
 
 
 urlpatterns = [
